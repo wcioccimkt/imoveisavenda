@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis à Venda - Santos/SP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .imoveis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .imovel {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .imovel img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .imovel h3 {
+            margin-top: 0;
+        }
+        .imovel p {
+            margin: 5px 0;
+        }
+        .contato-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contato-btn:hover {
+            background-color: #0056b3;
+        }
+        .formulario {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imobiliária XYZ - Destaques de Venda</h1>
+    </header>
+    <main>
+        <section class="imoveis">
+            <div class="imovel">
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#f0f0f0"/>
+                    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em">Casa em Condomínio</text>
+                </svg>
+                <h3>Casa em Condomínio</h3>
+                <p><strong>Área:</strong> 200m²</p>
+                <p><strong>Quartos:</strong> 3</p>
+                <p><strong>Banheiros:</strong> 2</p>
+                <p><strong>Preço:</strong> R$ 500.000</p>
+                <button class="contato-btn">Entrar em Contato</button>
+            </div>
+            <div class="imovel">
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#f0f0f0"/>
+                    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em">Apartamento Centro</text>
+                </svg>
+                <h3>Apartamento Centro</h3>
+               
+                <p><strong>Área:</strong> 100m²</p>
+                <p><strong>Quartos:</strong> 2</p>
+                <p><strong>Banheiros:</strong> 1</p>
+                <p><strong>Preço:</strong> R$ 300.000</p>
+                <button class="contato-btn">Entrar em Contato</button>
+            </div>
+            <div class="imovel">
+                <svg width="100%" height="200" xmlns="WhatsApp Image 2024-07-13 at 12.47.48.jpeg">
+                    <rect width="100%" height="100%" fill="#f0f0f0"/>
+                    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em">Casa de Praia</text>
+                </svg>
+                <h3>Casa de Praia</h3>
+                
+                <p><strong>Área:</strong> 150m²</p>
+                <p><strong>Quartos:</strong> 4</p>
+                <p><strong>Banheiros:</strong> 3</p>
+                <p><strong>Preço:</strong> R$ 700.000</p>
+                <button class="contato-btn">Entrar em Contato</button>
+            </div>
+            <div class="imovel">
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#f0f0f0"/>
+                    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em">Loft Moderno</text>
+                </svg>
+                <h3>Loft Moderno</h3>
+                
+                <p><strong>Área:</strong> 80m²</p>
+                <p><strong>Quartos:</strong> 1</p>
+                <p><strong>Banheiros:</strong> 1</p>
+                <p><strong>Preço:</strong> R$ 250.000</p>
+                <button class="contato-btn">Entrar em Contato</button>
+            </div>
+            <div class="imovel">
+                <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#f0f0f0"/>
+                    <text x="50%" y="50%" font-size="20" text-anchor="middle" dy=".3em">Chácara</text>
+                </svg>
+                <h3>Chácara</h3>
+                
+                <p><strong>Área:</strong> 5000m²</p>
+                <p><strong>Quartos:</strong> 4</p>
+                <p><strong>Banheiros:</strong> 2</p>
+                <p><strong>Preço:</strong> R$ 800.000</p>
+                <button class="contato-btn">Entrar em Contato</button>
+            </div>
+        </section>
+        <section class="formulario">
+            <h2>Entre em contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
