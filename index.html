@@ -21,15 +21,23 @@ html, body{
             line-height: 1.6;
         }
         header {
-            background-color: #333;
+            display: flex;
+            background-color: #032E59;
             color: white;
-            text-align: center;
-            padding: 1rem;
+            padding: 1em;
+            justify-content: space-between;
+            justify-content: space-around;
+            align-items: center;
+        }
+           
+        img {
+            width: 8rem;
+            align-items: center;
         }
         main {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 5rem;
         }
         .imoveis {
             display: grid;
@@ -107,7 +115,10 @@ html, body{
 </head>
 <body>
     <header>
-        <h1>Imóveis à Venda em Santos/SP - Ligue: (13) 99177-9237</h1>
+        <div class="logo">
+            <img src="logo.png" alt="imoveisavendaemsantos">
+        </div>
+        <h1>Imóveis à Venda em Santos/SP</h1>
     </header>
     <main>
         <section class="imoveis">
